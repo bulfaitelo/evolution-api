@@ -13,9 +13,6 @@ services:
       # Certifique-se que estas variáveis batem com o DATABASE_URL
       - DB_POSTGRES_HOST=evolution_postgres
       - DB_POSTGRES_PORT=5432
-      - DB_POSTGRES_USER=${POSTGRES_USERNAME}
-      - DB_POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-      - DB_POSTGRES_DATABASE=${POSTGRES_DATABASE}
     volumes:
       - evolution_instances:/evolution/instances
     networks:
